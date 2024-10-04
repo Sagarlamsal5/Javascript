@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        const text="We are reading javascript programming language as well as javascript is used in react"
+
+        document.write(`${text} <br>`)
+        
+        // to access the character in string through indexing
+        document.write(`${text[0]} <br>`) 
+        // to know the length of string .
+        document.write(`${text.length} <br>`)
+        // to know the data type of the variables.
+        document.write(`${typeof(text)} <br>`)
+        // to convert the string in uppercase.
+        document.write(`${text.toUpperCase()} <br>`)
+        // to conver the string in lowercase.
+        document.write(`${text.toLowerCase()} <br>`)
+        // to know the indext number of given data.
+        document.write(`${text.indexOf('javascript')} <br>`)
+        // to know the last index number of given data.
+
+        document.write(`${text.search('react')} <br>`)
+        document.write(`${text.includes("Hee")} <br>`)
+        document.write(`${text.split("well")}`)
+        document.write(`${text.slice(0,2)}`)
+
+
+    </script>
+</body>
+</html>

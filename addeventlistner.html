@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border:none ;
+            display: flex;
+            justify-content: center;
+         
+        }
+        .container-img{
+            border: 5px solid darkblue;
+            width: 600px;
+            height: 300px;
+            position: relative;
+        }
+        .container-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .left{
+            position: absolute;
+            font-size: 20px;
+            border: none;
+            top: 40%;
+            left: 10px;
+            padding: 5px;
+        }
+        .right{
+            position: absolute;
+            font-size: 20px;
+            border: none;
+            top: 40%;
+            right: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="container-img">
+            <img src="img/download.jpeg" alt="" width="400px">
+            <button class="left" id="lbtn">&lt;</button>
+            <button class="right" id="rbtn">&gt;</button>
+        </div>
+       
+    </div>
+   
+    <script>
+      const pre = () =>{
+      document.querySelector('img').src = 'img/download.jpeg'
+      }
+      document.getElementById("lbtn").addEventListener('click',pre)
+
+
+      document.getElementById("rbtn").addEventListener('click', ()=>{
+      document.querySelector('img').src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDxqgbLCNMQ9JM0EZCo7IwgVHFQQwxYKPDZ7P9bkAqe2BYpplHE26qhR0Oigx7GGoGtHs&usqp=CAU'
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        // const date = new Date()
+        // switch( date.getDay()){
+        //     case 0:
+        //     document.write("Sunday")
+        //     break;
+
+        //     case 1:
+        //     document.write("Monday")
+        //     break;
+
+        //     case 2:
+        //     document.write("Tuesday")
+        //     break;
+
+        //     case 3:
+        //     document.write("Wednesday")
+        //     break;
+
+        //     case 4:
+        //     document.write("Thursday")
+        //     break;
+
+        //     case 5:
+        //     document.write("Friday")
+        //     break;
+
+        //     case 6:
+        //     document.write("Saturday")
+        //     break;
+        //     default:
+        //         document.write("Invalid day")
+       // }
+       const username = prompt("Enter a username:")
+       const user = "admin"
+       const user1 = "sagar"
+       switch(username){
+        case user:
+            const attendence =prompt(" FullShift = Full\n Half Shift = Half\n Morning Shift=Morning\n Absent = Absent\n Enter an attendence:")
+            const full = "Full"
+            const half = "Half"
+            const morning = "Morning"
+            const absent = "Absent"
+        switch(attendence){
+            case full:
+                document.write("Staff has done full work.")
+                break;
+
+            case half:
+                document.write("Staff has done half work.")
+                break;
+
+            case morning:
+                document.write("Staff has done morning work only.")
+            break;
+
+            case absent:
+                document.write("Staff is absent.")
+            break;
+
+            default:
+                document.write("Invalid attendence.")
+        }
+        break;
+                
+        case user1:
+            alert("Welcome to dasdhbord")
+            break;
+        default:
+            document.write("Invalid User")
+
+       }
+    </script>
+</body>
+</html>

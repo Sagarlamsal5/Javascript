@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statemaen</title>
+</head>
+<body>
+    <script>
+        // if statement
+        // if else statement
+        // else if statement
+        // nested if else statement
+
+        // if else statement
+        // let age=parseInt(prompt("Enter an age:"))
+        // if(age<18){
+        //     document.write("YOu are not eligible for CItizenship")
+        // }
+        // else{
+        //     ddocument.write("YOu are  eligible for CItizenship")
+        // }
+
+        // else if statement
+        // let num=parseInt(prompt("Enter the number:"))
+        // if(num>0){
+        //     document.write(`${num} is a positive number`)
+        // }
+        // else if (num<0){
+        //     document.write(`${num} is a negative number`)
+        // }
+        // else (num=0){
+        //     document.write(`${num} is a equal to zero`)
+        // }
+
+        // even /odd
+        // let num=parseInt(prompt("Enter the number:"))
+        // if(num%2==0){
+        //     document.write(`${num} is a even number`)
+        // }
+        // else{
+        //     document.write(`${num} is a 0dd number`)
+        // }
+
+        // fizzbuzz question
+        // if number is divided by 3 and 5 ,it should given fizzbuzz as a output,if number is divisible by 3,it should give fizz as output,if number is divided by 5,it should give buzz as output otherwise print the given number.
+        // let num=parseInt(prompt("Enter the number:"))
+        // if(num%3==0 && num%5==0){
+        //     document.write("FIZZBUZZ")
+        // }
+        // else if(num%3==0){
+        //     document.write("FIZZ")
+        // }
+        // else if(num%5==0){
+        //     document.write("BUZZ")
+        // }
+        // else{
+        //     document.write(`${num}`)
+        // }
+        // nest if 
+
+        let username1 = "admin"
+        let username2 = "sagar"
+
+        let username = prompt("Enter the username")
+        if(username==username1){
+            alert("Welcome to admin dasboard")
+            let attendence =prompt("Full Shift = Full\n Half Shift = Half\n Morning Shift=Morning\n Absent = Absent\n Enter an attendence:")
+            if(attendence=="Full"){
+            document.write("Staff has done full work")
+        }
+        else if(attendence=="Half"){
+            document.write("Staff has done half work")
+        }
+        else if(attendence=="Morning"){
+            document.write("Staff has done morning work only")
+        }
+        else if(attendence=="Absent"){
+            document.write("Staff is absent")
+        }
+         else{
+            document.write("Invalid inputs")
+        }
+    }
+
+         if(username== username2){
+        alert("Welcome to admin dasboard")
+        let attendence =prompt("Full Shift = Full\n Half Shift = Half\n Morning Shift=Morning\n Absent = Absent\n Enter an attendence:")
+            if(attendence=="Full"){
+            document.write("Staff has done full work")
+        }
+        else if(attendence=="Half"){
+            document.write("Staff has done half work")
+        }
+        else if(attendence=="Morning"){
+            document.write("Staff has done morning work only")
+        }
+        else if(attendence=="Absent"){
+            document.write("Staff is absent")
+        }
+         else{
+            document.write("Invalid inputs")
+        }
+        }
+        else{
+            document.write("Invalid username")
+        }
+    </script>
+</body>
+</html>
