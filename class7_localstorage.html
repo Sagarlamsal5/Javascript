@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h2></h2>
+    <button id="btn">Remove</button>
+    <script>
+    //     localStorage.setItem('data','This is the javascript class')
+
+     
+
+    //   document.getElementById('btn').addEventListener('click',()=>{
+    //     localStorage.removeItem('data')
+    //   })
+    //   const test = localStorage.getItem('data')
+    //   document.querySelector('h2').innerHTML = test
+
+      localStorage.setItem('data','This is the javascript class')
+
+     
+
+      document.getElementById('btn').addEventListener('click',()=>{
+        localStorage.removeItem('data')
+      })
+      const test = localStorage.getItem('data')
+      document.querySelector('h2').innerHTML = test
+
+
+      //json - javascript object notation
+      const student = {
+        "firstname": "Hari",
+        "lastname": "Shrestha"
+      }
+      //JSON,stringify()
+      localStorage.setItem('student', JSON.stringify(student))//to convert object into string
+
+     
+
+      //JSON.parse()
+      const studentdat = JSON.parse(localStorage.getItem('student'))//to convert string into object
+      console.log(studentdat.firstname)
+    </script>
+</body>
+</html>
