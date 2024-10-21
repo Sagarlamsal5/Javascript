@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call back function</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        const news = [{title:"Sport News",description:"This is description"},
+            {title:"Political News",description:"This is description"},
+        ]
+
+        const showNews = ()=>{
+            let result = 0
+            news.forEach(res=>
+               document.querySelector('ul').innerHTML = `<li>${res.title}</li>`
+            )
+        }
+        setTimeout(showNews,3000)
+
+
+    </script>
+</body>
+</html>

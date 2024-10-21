@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructure</title>
+</head>
+<body>
+    <script>
+
+        //array destructure
+        const fruits = ['apple','mango','banana','orange']
+        const[first,second,third,fourth] = fruits
+        document.write(first,'<br>')
+        document.write(second,'<br>')
+        document.write(third,'<br>')
+        document.write(fourth,`<br>`)
+
+        
+ const student = {
+        fname:"Sagar",
+        lname:"Lamsal",
+        address:"KTM",
+        education:"MIT"
+
+    }
+    //object destructure
+    const displaystudent=({fname,lname,address})=>{
+        document.write(`student full name is ${fname} ${lname}. student resident is ${address}`)
+    }
+    displaystudent(student)
+</script>
+   
+</body>
+</html>

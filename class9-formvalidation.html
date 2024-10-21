@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center .my-5 p-3">
+
+        <form action="" class="shadow-sm p-5 shodow-yellow-50 w-[70%]">
+
+            <h1 class="text-2xl font-bold">User Form</h1>
+
+            <div class="mb-2">
+                <label for="fname" class="block text-sm font-medium leading-6 text-gray-900">First Name</label>
+                <input type="text" id="fname" placeholder="First Name"
+                class="block flex-1 border-2 text-gray-900 placeholder:text-gray-400 roundrd-lg p-2 w-full">
+                <span id="fnamemgs"></span>
+            </div>
+
+            <div class="mb-2">
+                <label for="lname" class="block text-sm font-medium leading-6 text-gray-900">Last Name</label>
+                <input type="text" id="lname" placeholder="Lirst Name"
+                class="block flex-1 border-2 text-gray-900 placeholder:text-gray-400 roundrd-lg p-2 w-full">
+                <span id="lnamemgs"></span>
+            </div>
+
+            <div class="mb-2">
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                <input type="text" id="email" placeholder="xyz@gmail.com"
+                class="block flex-1 border-2 text-gray-900 placeholder:text-gray-400 roundrd-lg p-2 w-full">
+                <span id="emailmgs"></span>
+            </div>
+
+            <div class="mb-2">
+                <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                <input type="text" id="password" placeholder="***************"
+                class="block flex-1 border-2 text-gray-900 placeholder:text-gray-400 roundrd-lg p-2 w-full">
+                <span id="fnamemgs"></span>
+            </div>
+
+            <div class="mb-2">
+                <label for="cpwd" class="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
+                <input type="text" id="cpwd" placeholder="************"
+                    class="block flex-1 border-2 text-gray-900 placeholder:text-gray-400 roundrd-lg p-2 w-full">
+                <span id="cpwdmgs"></span>
+            </div>
+
+            <div class="mb-2">
+                <input type="submit" value="Submit" class="bg-blue-500 text-white py-2 px-3 text-lg rounded-lg w-full">
+            </div>
+
+        </form>
+    </div>
+    <script src="class9_formvalidation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread and rest operator</title>
+</head>
+<body>
+    <script>
+        //...spread operator used to combine multiple array into single array
+        const even_num = [2,4,6,8,10]
+        const odd_num = [1,3,5,7,9]
+        const num = [...even_num, ...odd_num]
+        console.log(num)
+
+        //rest operator
+        const sport = ['basketball','vollyball','football','tenis','hockey','baseball']
+
+        const[data1,data2,data3,...data4] = sport
+        document.write(data1,'<br>')
+        document.write(data2,'<br>')
+        document.write(data3,'<br>')
+        document.write(data4)
+    </script>
+</body>
+</html>
