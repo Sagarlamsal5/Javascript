@@ -48,8 +48,8 @@ const lnamevalidate=()=>{
         displayMgs("Last Name is Mandotary", "lnamemgs", "red")
         return false
     }
-    else if(lname.length< 3){
-        displayMgs("Last Name must be more than 2 character", "lnamemgs", "red")
+    else if(lname.length <= 2){
+        displayMgs("Last Name must be more than one character", "lnamemgs", "red")
         return false
     }
     else if(!lname.match(/^[a-zA-Z]+$/)){
