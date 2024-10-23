@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array iteration</title>
+</head>
+<body>
+    <script>
+        //for each
+        const num  = [1,2,3,4,5]
+        num.forEach((a)=>{
+            document.write(`${a**2}<br>`)
+        })
+
+        //map
+        const num1 = [2,3,4,5,6]
+        const newarray = num1.map((x)=> x**3)
+        document.write(newarray,"<br>")
+
+        //filter
+        const price = [1000,2000,3000,4000,5000,6000,7000,8000,9000]
+        const filterdata = price.filter(x=>x<5000 && x>2000)
+        document.write(filterdata,"<br>")
+
+        //reduce
+        const totalprice = price.reduce((x,y)=>x+y)
+        document.write(totalprice,"<br>")
+
+        //reduceRight()
+
+        //every()
+        const everyarray = price.every(x=>x>1000)
+        document.write(everyarray,"<br>")
+
+        //some()
+        const somearray = price.some(x=>x>1000)
+        document.write(somearray,"<br>")
+
+        //spread()
+            </script>
+</body>
+</html>
