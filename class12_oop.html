@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        //blueprint of object
+        class student{
+            constructor(fname,lname,address){
+                this.fname = fname
+                this.lname = lname
+                this.address = address
+                document.write(`${fname}<br>`)
+            }
+            display(){
+                return `Full name of student is ${this.fname} ${this.lname} <br> Address of student is ${this.address} `
+                
+            }
+        }
+
+        //instance of a class
+        Student = new student('Sagar','Lamsal','Kalanki')
+        document.write(Student.display())
+
+        //inheritance
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+}
+const myCar = new Car("Ford");
+document.getElementById("demo").innerHTML = myCar.carname;
+
+        //polymorphism
+        //encapsulation
+        //abstraction
+    </script>
+</body>
+</html>

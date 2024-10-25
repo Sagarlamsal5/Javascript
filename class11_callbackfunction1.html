@@ -6,22 +6,31 @@
     <title>Call back function</title>
 </head>
 <body>
+    <div></div>
     <script>
           const news = [
             {title:"Sport News",description:"This is description"},
             {title:"Political News",description:"This is description"},
         ]
 
-        const showNews = (news)=>{
-            setTimeout((news)=>{
-                result=""
-                news.foreach(x=>{
+        const showNews = ()=>{
+            setTimeout(()=>{
+                let result = ""
+                news.forEach((x)=>{
                     result+=`<li>${x.title}</li>`
                 })
-                document.querySelector('ul').innerHTML = result
-            },2000)
+                document.querySelector('div').innerHTML = result
+            }, 3000)
         }
-        showNews(news)
+    
+
+                const addNews = (data,callbck)=>{
+                    setTimeout(()=>{
+                        news.push(data)
+                        callbck()
+                    }, 5000)
+                }
+                addNews({title:"Esports News", description:"This is description section"},showNews)
 
     </script>
 </body>

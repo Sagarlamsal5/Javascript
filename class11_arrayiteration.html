@@ -28,7 +28,8 @@
         document.write(totalprice,"<br>")
 
         //reduceRight()
-
+            const reducedrightarray = price.reduceRight((x,y,z)=>x+y-z)
+            document.write(reducedrightarray,"<br>")
         //every()
         const everyarray = price.every(x=>x>1000)
         document.write(everyarray,"<br>")
@@ -38,6 +39,13 @@
         document.write(somearray,"<br>")
 
         //spread()
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "dec"];
+
+        const year = [...q1,...q2,...q3,...q4]
+        document.write(year)
             </script>
 </body>
 </html>

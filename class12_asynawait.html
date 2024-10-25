@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asyn wait</title>
+</head>
+<body>
+    <div></div>
+    <script>
+          const news = [
+            {title:"Sport News",description:"This is description"},
+            {title:"Political News",description:"This is description"},
+        ]
+
+        const showNews = ()=>{
+            setTimeout(()=>{
+                let result = ""
+                news.forEach((x)=>{
+                    result+=`<li>${x.title}</li>`
+                })
+                document.querySelector('div').innerHTML = result
+            }, 3000)
+        }
+    
+
+                const addNews = (data)=>{
+                    return new Promise((resolve,reject)=>{
+                        setTimeout(()=>{
+                            news.push(data)
+                            const err = false
+                            if(!err){
+                                resolve()
+                            }
+                            else{
+                                reject(`Something went wrong`)
+                            }
+                        },5000)
+                    })
+                }
+              async function demofunction() {
+                await addNews({title:"Esports News", description:"This is description section"})
+                showNews()
+              }
+              demofunction()
+              </script>
+</body>
+</html>
